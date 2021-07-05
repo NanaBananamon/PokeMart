@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PokéMart Receipt</title>
+
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,700;1,100;1,400&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        
+        <img src="./images/pokemart2.png" alt="logomart">
+
+    </header>
+
+    <main class="container">
+
+        <section id="balance">
+            <h2 class="sr-only">Balanço</h2>
+
+            <div class="card">
+                <h3>
+                    <span>Entradas</span>
+                    <img src="./images/income.svg" alt="ImagemEntradas">
+                </h3>
+                <p>₽ 10.000,00</p>
+            </div>
+            <div class="card">
+                <h3>
+                    <span>Saídas</span>
+                    <img src="./images/expense.svg" alt="ImagemSaida">
+                </h3>
+                <p>₽ 3.700,00</p>
+            </div>
+            <div class="card total">
+                <h3>
+                    <span>Total</span>
+                    <img src="./images/total.svg" alt="ImagemTotal">
+                </h3>
+                <p>₽ 6.300,00</p>
+            </div>
+
+        </section>
+        <section id="transaction">
+            <h2 class="sr-only">Transações</h2>
+
+            <a href="#" class="button new">+ Nova Transação</a>
+
+            <div >
+                <table id="data-table">
+                    <thead>
+
+                        <tr>
+                            <th>Item</th>
+                            <th>Nome</th>
+                            <th>Qtd.</th>
+                            <th>Valor</th>
+                            <th>Data</th>
+                            <th></th>
+                        </tr>
+
+                    <tbody>
+                        <tr class="backyellow">
+                            <td><img src="./images/potion.png" alt="Item Image"></td>
+                            <td class="description">Potion </td>
+                            <td class="quantity">2</td>    
+                            <td class="expense">- ₽ 600,00</td>
+                            <td class="date">02/07/2021</td>
+                            <td><img src="./images/minus.svg" alt="Remover Transacao"></td>
+                        </tr>
+
+                        <tr class="backpink">
+                            <td><img src="./images/big-nugget.png" alt="Item Image"></td>
+                            <td class="description">Venda de Big Nugget</td>
+                            <td class="quantity">1</td>
+                            <td class="income">₽ 10.000,00</td>
+                            <td class="date">03/07/2021</td>
+                            <td><img src="./images/minus.svg" alt="Remover Transacao"></td>
+                        </tr>
+
+                        <tr class="backyellow">
+                            <td><img src="./images/poke-ball.png" alt="Item Image"></td>
+                            <td class="description">Poké Ball</td>
+                            <td class="quantity">10</td>
+                            <td class="expense">- ₽ 2000,00</td>
+                            <td class="date">04/07/2021</td>
+                            <td><img src="./images/minus.svg" alt="Remover Transacao"></td>
+                        </tr>
+
+                        <tr class="backpink">
+                            <td><img src="./images/escape-rope.png" alt="Item Image"></td>
+                            <td class="description">Escape Rope</td>
+                            <td class="quantity">2</td>
+                            <td class="expense">- ₽ 1100,00</td>
+                            <td class="date">05/07/2021</td>
+                            <td><img src="./images/minus.svg" alt="Remover Transacao"></td>
+                        </tr>
+                    </tbody>
+                    </thead>
+                </table>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer class="container">
+        <p>PokéMart - ©2021 Pokémon. TM, ®Nintendo.</p>
+        <p>Designed by: NanaBananamon.</p>
+    </footer>
+
+</body>
+
+</html>
